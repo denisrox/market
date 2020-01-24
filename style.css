@@ -1,0 +1,72 @@
+body{
+    background-color: #f8f8f8;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+
+}
+header a{
+    color: goldenrod;
+    font-size: 15px; 
+}
+header li {
+    list-style-type: none;
+    /*стиль текста указал в body, чтобы один стиль на всю страницу*/
+}
+header ul {
+    padding: 0;  
+
+}
+
+.PageProductDescription h2{
+    font-size: 18px;
+    color: black;
+    font-weight: 400; 
+    background-color: #eaeaea;
+}
+
+.PageProductDescription img{
+    border: 2px ridge coral;
+    border-radius: 5%;
+}
+
+
+.briefProductDescription{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+.detailedProductDescription{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400; 
+    line-height: 24px;
+    text-align: left;
+}
+
+.specifications ul, .specifications ol{
+    
+    list-style-image: url(image/marker.jpg);
+}
+
+.contacts input[type="text"],.contacts input[type="email"] {
+    width: 200px;
+    height: 15px;
+    background-color: burlywood;
+}
+form input[type="submit"],form input[type="reset"] {
+    width: 48.5%;
+    color: cornflowerblue;
+}
+form{
+    display:flex;
+}
+form label{
+    display:inline-block;
+    width: 200px;
+    color: green;
+}
+.contacts textarea {
+    width: 403px;
+    height: 138px;
+    background-color: burlywood;
+}
