@@ -1,44 +1,127 @@
-body{
+body {
     background-color: #f8f8f8;
     font-family: Verdana, Arial, Helvetica, sans-serif; 
 
 }
-header a{
-    color: goldenrod;
-    font-size: 15px; 
+
+.container {
+    width: 1000px;
+    background-color: blanchedalmond;
+    margin: 0 auto;
+
 }
 
-header::before{
-    content: url(image/logo.png);    
+header a {
+    color: goldenrod;
+    font-size: 15px; 
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 10px;
+
+}
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-image: url("image/30296.jpg");
+}
+header .logo {
+    position: relative;
+}
+header .logo p{
+    position: absolute;
+    top: 0px;
+    left: 90px;
+    margin-top: 0px;
+    background-color: rgba(255, 255, 255, 0.897);
 }
 header li {
     list-style-type: none;
+    /*float: right;*/
+    display: inline;
 }
 header ul {
     padding: 0;  
 
 }
+footer {
+    height: 150px;
+    padding: 15px;
+    background-color: #eaeaea;
+}
+.footer {
+    padding: 5px 35px;
+    float: right;
+}
 
-.PageProductDescription h2{
+
+.PageProductDescription h2 {
     font-size: 18px;
     color: black;
     font-weight: 400; 
     background-color: #eaeaea;
 }
 
-.PageProductDescription img{
+.PageProductDescription img { 
     border: 2px ridge coral;
     border-radius: 5%;
+    width: 300px;
+    float: left;
+}
+.PageProductDescription button {
+    float: right;
+    margin-right: 25px;
+    background-color: aquamarine;
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+}
+.PageProductDescription button:hover {
+    background-color: rgb(118, 199, 172);
+}
+.PageProductDescription button:active {
+    border: 2px solid gray;
+    background-color: rgb(125, 219, 231);
 }
 
+.description::after {
+    clear: both;
+    display: block;
+    content: '';
+}
 
-.briefProductDescription{
+.catalogProducts {
+    overflow: hidden;
+    padding: 0px 100px;
+}
+
+.product {
+    width: 250px;
+    height: 250px;
+    float: left;
+    border: 2px solid lightsalmon;
+    overflow: hidden;
+    margin-right: 15px;
+}
+.product img{
+    width: 250px;
+}
+
+.product:nth-child(n+4) {
+    margin-top: 35px;
+}
+
+.product:nth-child(3n) {
+    margin-right: 0;
+}
+
+.briefProductDescription {
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
 }
-.detailedProductDescription{
+.detailedProductDescription {
     color: #484343;
     font-size: 16px;
     font-weight: 400; 
@@ -46,24 +129,27 @@ header ul {
     text-align: left;
 }
 
-.specifications ul, .specifications ol{
+.specifications ul, 
+.specifications ol {
     
     list-style-image: url(image/marker.jpg);
 }
 
-.contacts input[type="text"],.contacts input[type="email"] {
+.contacts input[type="text"],
+.contacts input[type="email"] {
     width: 200px;
     height: 15px;
     background-color: burlywood;
 }
-form input[type="submit"],form input[type="reset"] {
+form input[type="submit"],
+form input[type="reset"] {
     width: 48.5%;
     color: cornflowerblue;
 }
-form{
+form {
     display:flex;
 }
-form label{
+form label {
     display:inline-block;
     width: 200px;
     color: green;
@@ -74,7 +160,7 @@ form label{
     background-color: burlywood;
 }
 /* Все новые селекторы урока 4 см ниже:*/
-header a:hover{
+header a:hover {
     color: rgb(151, 101, 9);
 }
 
@@ -82,23 +168,23 @@ header a:hover{
     background-color: cornflowerblue;
     color: orange;
 }
-.contacts form input:not([type="email"]):focus{
+.contacts form input:not([type="email"]):focus {
     background-color: cornflowerblue;
     color:red;
 }
-.contacts textarea{
+.contacts textarea {
     text-transform: capitalize;
 }
 
-.specifications tr{
+.specifications tr {
     border-bottom: solid 1px #32a1ce;
     border-right: solid 15px #32a1ce;
 }
-.specifications tr:first-of-type{
+.specifications tr:first-of-type {
     height: 50px;
 }
 
-.specifications table{
+.specifications table {
     border-collapse: collapse;
     border: thick double #32a1ce;
     width: 1000px;
@@ -111,8 +197,10 @@ header a:hover{
     border-radius: 5%;
 }
 
-.PageProductDescription p::first-letter{
+.PageProductDescription p::first-letter {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     font-size: 36px;
     color: violet;
 }
+
+
